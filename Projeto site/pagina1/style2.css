@@ -1,0 +1,58 @@
+/* Reset simples */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 80px;
+}
+
+/* Estilo para o título */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Estilo para o parágrafo */
+p {
+    color: #555;
+    text-align: center;
+}
+
+/* Menu de navegação */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 0;
+    background-color: #2c3e50;
+    z-index: 1000;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495ea4;
+}
+
+/* Remove list bullets and align items side by side */ 
+ul, ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
