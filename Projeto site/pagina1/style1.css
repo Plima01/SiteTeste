@@ -1,4 +1,3 @@
-/* Reset simples */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,19 +5,16 @@ body {
     padding-top: 80px;
 }
 
-/* Estilo para o título */
 h1 {
     color: #2c3e50;
     text-align: center;
 }
 
-/* Estilo para o parágrafo */
 p {
     color: #555;
     text-align: center;
 }
 
-/* Menu de navegação */
 nav {
     position: fixed;
     top: 0;
@@ -31,7 +27,6 @@ nav {
     z-index: 1000;
 }
 
-/* Menu horizontal */
 nav ul {
     display: flex;
     gap: 10px;
@@ -55,107 +50,24 @@ nav a:hover {
     background-color: #34495ea4;
 }
 
-/* Remove marcadores das listas */
-ul, ol {
+ul,
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* ===== CARDS ===== */
-
-.planos {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-}
-
-.card {
-    width: 320px;
-    height: 620px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-
-    display: flex;
-    flex-direction: column;
-
-    background: white;
-}
-
-.card-topo {
-    background-color: #2d2d2d;
-    color: white;
-    padding: 25px;
-    flex: 1;
-}
-
-.card-topo h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 22px;
-}
-
-.card-topo ul {
-    display: block;
-}
-
-.card-topo li {
-    margin-bottom: 14px;
-    font-size: 18px;
-}
-
-.card-baixo {
-    background-color: #c40000;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-.card-baixo h3 {
-    color: white;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.card-baixo button {
-    padding: 12px 35px;
-    border: none;
-    border-radius: 25px;
-    background: white;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.card-baixo button:hover {
-    background: #ececec;
-}
-/* ===== BANNER ===== */
-
 .banner {
     width: 100%;
     height: 700px;
 
-    background-image: url("a-internet-das-coisas.jpg");
+    background-image: url("jorge.jpg");
     background-size: cover;
     background-position: center;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
-}
-
-.banner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
 }
 
 .banner-conteudo {
@@ -185,4 +97,172 @@ ul, ol {
     color: white;
     font-size: 18px;
     cursor: pointer;
+}
+
+.depoimentos {
+    background: #000;
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.depoimento-card {
+    max-width: 350px;
+}
+
+.depoimento-card h3 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.depoimento-card p {
+    color: #d0d0d0;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.depoimento-card span {
+    display: block;
+    margin-top: 20px;
+    color: #999;
+    font-size: 16px;
+}
+
+.depoimentos {
+    background-image: url("0101.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+
+    position: relative;
+}
+
+.depoimentos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.depoimentos h2,
+.depoimentos-container {
+    position: relative;
+    z-index: 1;
+}
+
+.familia {
+    background: #000;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    padding: 100px 10%;
+    flex-wrap: wrap;
+}
+
+.familia-texto {
+    max-width: 500px;
+
+}
+
+.familia-texto h2 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.familia-texto p {
+    color: #a0a0a0;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.familia-imagem img {
+    width: 650px;
+    max-width: 100%;
+    border-radius: 12px;
+    display: block;
+    position: left;
+}
+
+.familia {
+    position: relative;
+
+    background: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    padding: 100px 10%;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+}
+
+.familia::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("12345.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.20;
+
+    z-index: 0;
+}
+
+
+.familia-texto,
+.familia-imagem {
+    position: relative;
+    z-index: 1;
+}
+
+.familia-texto {
+    max-width: 500px;
+}
+
+.familia-texto h2 {
+    color: white;
+    font-size: 60px;
+}
+
+.familia-texto p {
+    color: #a0a0a0;
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.familia-imagem img {
+    width: 650px;
+    max-width: 100%;
+    border-radius: 12px;
 }
