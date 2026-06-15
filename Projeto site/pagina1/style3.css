@@ -1,5 +1,9 @@
 /* Reset simples */
 body {
+    background-image: url("12345.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.85;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -47,7 +51,6 @@ nav a:hover {
     background-color: #34495ea4;
 }
 
-/* Remove list bullets and align items side by side */ 
 ul, ol {
     list-style: none;
     padding: 0;
@@ -62,4 +65,87 @@ ul, ol {
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+}
+.feedback-container {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    max-width: 520px;
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+}
+
+.feedback-header {
+    background: #2c3e50;
+    padding: 28px 32px;
+    text-align: center;
+}
+
+.feedback-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    font-size: 22px;
+}
+
+.feedback-header h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.feedback-header p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+}
+
+.feedback-content {
+    padding: 28px 32px;
+}
+
+.feedback-info {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    flex: 1;
+    background: #f8f9fa;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #555;
+}
+
+.feedback-button {
+    display: block;
+    padding: 13px;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.feedback-button:hover {
+    background: #1f2d3a;
+}
+
+.feedback-footer {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
 }
